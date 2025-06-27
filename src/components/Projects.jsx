@@ -1,31 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import blogapp from '../blog-app.png';
+import agroww from '../agroww.png'
+
 
 const projects = [
   {
     title: 'AI Blog App',
     description: 'A blog app powered by Gemini AI and MERN stack.',
     tech: ['React', 'Node.js', 'MongoDB', 'Gemini AI'],
-    github: '#',
-    demo: '#',
-    image: 'https://via.placeholder.com/400x200?text=AI+Blog',
+    github: 'https://github.com/Hardik22092003/Blogwise',
+    demo: 'https://blogwise-psi.vercel.app/',
+    image: blogapp,
   },
   {
-    title: 'Agroww Dashboard',
-    description: 'An admin dashboard for farmers built with Spring Boot and H2 DB.',
+    title: 'Agroww- Invest in Farms, Harvest Returns',
+    description: 'Investor-Farmer Connect Platform',
     tech: ['Spring Boot', 'H2', 'React'],
-    github: '#',
-    demo: '#',
-    image: 'https://via.placeholder.com/400x200?text=Agroww',
+    github: 'https://github.com/Hardik22092003/agroww',
+    demo: 'https://agroww.vercel.app/',
+    image: agroww,
   },
-  {
-    title: 'Space Explorer',
-    description: 'A space-themed project explorer using NASA APIs.',
-    tech: ['React', 'API', 'Tailwind'],
-    github: '#',
-    demo: '#',
-    image: 'https://via.placeholder.com/400x200?text=Space+Explorer',
-  },
+ 
 ];
 
 const tilt = {
@@ -42,7 +38,7 @@ const tilt = {
 const Projects = () => (
   <section id="projects" className="py-24 px-4 bg-zinc-900">
     <h2 className="text-3xl font-bold mb-10 text-center text-fuchsia-400 neon-text">Projects</h2>
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto justify-center">
       {projects.map((project, idx) => (
         <motion.div
           key={project.title}
